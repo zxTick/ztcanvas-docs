@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: Canvas Engine
-  text: Make Canvas Grate Again ! 
+  text: Make Canvas Great Again ! 
   tagline: a framework to help you build your canvas library easily
   image: 
     src: /logo.png

@@ -9,7 +9,7 @@ export default defineConfig({
     lineNumbers: true
   },
   themeConfig: {
-    logo: "/public/logo.png",
+    logo: "/logo.png",
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2022-present Tick Wu and Alex Zhang'

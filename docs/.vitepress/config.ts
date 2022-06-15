@@ -18,7 +18,7 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/zxTick/canvas-engine' },
     ],
     editLink: {
-      pattern: 'https://github.com/zxTick/canvas-engine/main/:path',
+      pattern: 'https://github.com/zxTick/canvas-engine-docs/main/:path',
       text: 'Edit this page on GitHub'
     },
     sidebar: {

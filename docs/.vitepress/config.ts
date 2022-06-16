@@ -37,6 +37,10 @@ export default defineConfig({
           text: "Guide",
           items: [
             {
+              text: "Why ZTCanvas",
+              link: "/guide/why",
+            },
+            {
               text: "Getting Started",
               link: "/guide/getting-started",
             }, {

@@ -14,6 +14,17 @@ So we do not recommend using it for production.
 
 ## Install
 
-## Usage
+::: info
+Pre-requisites
 
-## API
+Familiarity with the command line
+Install Node.js
+:::
+
+```bash
+# use npm
+npm i ztcanvas
+
+# use pnpm
+pnpm i ztcanvas
+```

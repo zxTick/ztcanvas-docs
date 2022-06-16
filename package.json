@@ -9,5 +9,8 @@
   "devDependencies": {
     "vitepress": "1.0.0-alpha.2",
     "vue": "^3.2.37"
+  },
+  "dependencies": {
+    "ztcanvas": "^0.9.5"
   }
 }

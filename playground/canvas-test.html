@@ -1,0 +1,18 @@
+<canvas id="canvas" width="300" height="300" style="background-color: #ccc;"></canvas>
+
+<script>
+  const canvas = document.getElementById('canvas');
+  const ctx = canvas.getContext('2d');
+
+  ctx.fillStyle = 'purple';
+  const path2d = new Path2D()
+  path2d.rect(10, 20, 80, 80)
+  ctx.fill(path2d);
+
+  canvas.addEventListener("click", e => {
+    const { clientX, clientY } = e
+    if (ctx.isPointInPath(path2d, clientX, clientY)) {
+      alert("rect clicked")
+    }
+  })
+</script>

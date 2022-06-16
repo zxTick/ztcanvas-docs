@@ -22,6 +22,15 @@ export default defineConfig({
         "https://github.com/zxTick/ztcanvas-docs/edit/main/docs/:path",
       text: "Edit this page on GitHub",
     },
+    nav: [
+      { text: 'Guide', link: '/guide' },
+      {
+        text: 'Shapes',
+        items: [
+          { text: 'Rect', link: '/shapes/rect' },
+        ]
+      }
+    ],
     sidebar: {
       "/guide/": [
         {
@@ -30,6 +39,9 @@ export default defineConfig({
             {
               text: "Getting Started",
               link: "/guide/getting-started",
+            }, {
+              text: "CanvasEngine",
+              link: "/guide/engine",
             },
             {
               text: "Contribute Guide",
@@ -38,6 +50,17 @@ export default defineConfig({
           ],
         },
       ],
+      "/shapes/": [
+        {
+          text: "Shape",
+          items: [
+            {
+              text: "Rect",
+              link: "/shapes/rect"
+            }
+          ]
+        }
+      ]
     },
   },
 });

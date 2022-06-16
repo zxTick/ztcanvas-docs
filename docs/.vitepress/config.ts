@@ -1,4 +1,5 @@
-import { defineConfig } from "vitepress";
+import { DefaultTheme, defineConfig } from "vitepress";
+import { sidebars } from "./data";
 
 export default defineConfig({
   title: "ztcanvas",
@@ -22,49 +23,24 @@ export default defineConfig({
         "https://github.com/zxTick/ztcanvas-docs/edit/main/docs/:path",
       text: "Edit this page on GitHub",
     },
-    nav: [
-      { text: 'Guide', link: '/guide' },
-      {
-        text: 'Shapes',
-        items: [
-          { text: 'Rect', link: '/shapes/rect' },
-        ]
-      }
-    ],
-    sidebar: {
-      "/guide/": [
-        {
-          text: "Guide",
-          items: [
-            {
-              text: "Why ZTCanvas",
-              link: "/guide/why",
-            },
-            {
-              text: "Getting Started",
-              link: "/guide/getting-started",
-            }, {
-              text: "CanvasEngine",
-              link: "/guide/engine",
-            },
-            {
-              text: "Contribute Guide",
-              link: "/guide/contribute",
-            },
-          ],
-        },
-      ],
-      "/shapes/": [
-        {
-          text: "Shape",
-          items: [
-            {
-              text: "Rect",
-              link: "/shapes/rect"
-            }
-          ]
-        }
-      ]
-    },
+    nav: getNavs(),
+    sidebar: getSidebar()
   },
 });
+
+
+function getSidebar() {
+  return sidebars
+}
+
+function getNavs() {
+  const navs: DefaultTheme.NavItem[] = []
+  Object.keys(sidebars).forEach(key => {
+    const item = sidebars[key][0]
+    navs.push({
+      text: item.text,
+      items: item.items
+    })
+  })
+  return navs
+}

@@ -47,7 +47,7 @@ ctx.fillRect(10, 10, 100, 100);
 - you need to figure out what the function `fillRect` params means 
 - and If you want add event listeners such as `click`, it'hard.
 
-👇 a example 
+👇 an example 
 
 ## With Event Listener
 
@@ -109,7 +109,7 @@ ZTCanvas has this functionality built in to help you manage all the events, you 
 
 also, ZTCanvas support switch layers.
 
-a example 👇
+an example 👇
 
 <br />
 

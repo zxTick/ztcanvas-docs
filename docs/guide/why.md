@@ -105,7 +105,7 @@ Also, if you're writing with vanilla javascript, when you want to remove a recta
 ZTCanvas has this functionality built in to help you manage all the events, you just need to `add` and `remove` shapes.
 
 
-## manage Layers
+## Manage Layers
 
 also, ZTCanvas support switch layers.
 

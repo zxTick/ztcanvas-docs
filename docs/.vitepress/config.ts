@@ -15,11 +15,11 @@ export default defineConfig({
       copyright: "Copyright © 2022-present Tick Wu and Alex Zhang",
     },
     socialLinks: [
-      { icon: "github", link: "https://github.com/zxTick/canvas-engine" },
+      { icon: "github", link: "https://github.com/zxTick/ztcanvas" },
     ],
     editLink: {
       pattern:
-        "https://github.com/zxTick/canvas-engine-docs/edit/main/docs/:path",
+        "https://github.com/zxTick/ztcanvas/edit/main/docs/:path",
       text: "Edit this page on GitHub",
     },
     sidebar: {

@@ -2,19 +2,19 @@
 layout: home
 
 hero:
-  name: Canvas Engine
-  text: Make Canvas Great Again ! 
+  name: ZTCanvas 
+  text: a lightweight but powerful Canvas Engine
   tagline: a framework to help you build your canvas library easily
   image: 
     src: /logo.png
-    alt: Canvas Engine
+    alt: ZTCanvas
   actions:
     - theme: brand
       text: Get Started
       link: /guide/getting-started
     - theme: alt
       text: View on GitHub
-      link: https://github.com/zxTick/canvas-engine
+      link: https://github.com/zxTick/ztcanvas
 features:
   - icon: ⛔️
     title: fully type supported

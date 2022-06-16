@@ -19,7 +19,7 @@ export default defineConfig({
     ],
     editLink: {
       pattern:
-        "https://github.com/zxTick/ztcanvas/edit/main/docs/:path",
+        "https://github.com/zxTick/ztcanvas-docs/edit/main/docs/:path",
       text: "Edit this page on GitHub",
     },
     sidebar: {

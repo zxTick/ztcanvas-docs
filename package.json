@@ -11,6 +11,10 @@
     "vue": "^3.2.37"
   },
   "dependencies": {
+<<<<<<< Updated upstream
     "ztcanvas": "^0.9.5"
+=======
+    "ztcanvas": "^0.9.9"
+>>>>>>> Stashed changes
   }
 }

@@ -3,10 +3,10 @@ lockfileVersion: 5.4
 specifiers:
   vitepress: 1.0.0-alpha.2
   vue: ^3.2.37
-  ztcanvas: ^0.9.6
+  ztcanvas: ^1.0.1
 
 dependencies:
-  ztcanvas: 0.9.6
+  ztcanvas: 1.0.1
 
 devDependencies:
   vitepress: 1.0.0-alpha.2
@@ -1771,8 +1771,8 @@ packages:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
     dev: false
 
-  /ztcanvas/0.9.6:
-    resolution: {integrity: sha512-j5s8E75FTPKXRcs6qTJhTnPaBqZef/xWT0yHa9iwXhrovVYoGgKfVyo/wDuFTc2+PrQYzX1+EHeJfzmJ1nQCpA==}
+  /ztcanvas/1.0.1:
+    resolution: {integrity: sha512-8Rt1H89Zp2Z2bWfF3236a7r2ttcZVQJa8q6r6KBRDwBYlZiMv0TbMdlV2VGEUUOXJbphbSoZQuAxUHYv3YtrGw==}
     dependencies:
       '@vue/shared': 3.2.37
       nanoid: 4.0.0

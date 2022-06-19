@@ -3,10 +3,10 @@ lockfileVersion: 5.4
 specifiers:
   vitepress: 1.0.0-alpha.2
   vue: ^3.2.37
-  ztcanvas: ^0.9.5
+  ztcanvas: ^0.9.6
 
 dependencies:
-  ztcanvas: 0.9.5
+  ztcanvas: 0.9.6
 
 devDependencies:
   vitepress: 1.0.0-alpha.2
@@ -591,7 +591,6 @@ packages:
 
   /@vue/shared/3.2.37:
     resolution: {integrity: sha512-4rSJemR2NQIo9Klm1vabqWjD8rs/ZaJSzMxkMNeJS6lHiUjjUeYFbooN19NgFjztubEKh3WlZUeOLVdbbUWHsw==}
-    dev: true
 
   /@vueuse/core/8.6.0_vue@3.2.37:
     resolution: {integrity: sha512-VirzExCm/N+QdrEWT7J4uSrvJ5hquKIAU9alQ37kUvIJk9XxCLxmfRnmekYc1kz2+6BnoyuKYXVmrMV351CB4w==}
@@ -1772,9 +1771,10 @@ packages:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
     dev: false
 
-  /ztcanvas/0.9.5:
-    resolution: {integrity: sha512-PHjTTFbVEcs4WJbvI4Fx0BrAvrX5osYFltH2Aq3I/C8UPhkK1fJtd2cNiCgeUZ3jum2k9lLBgrtK+VUonjLDmw==}
+  /ztcanvas/0.9.6:
+    resolution: {integrity: sha512-j5s8E75FTPKXRcs6qTJhTnPaBqZef/xWT0yHa9iwXhrovVYoGgKfVyo/wDuFTc2+PrQYzX1+EHeJfzmJ1nQCpA==}
     dependencies:
+      '@vue/shared': 3.2.37
       nanoid: 4.0.0
       unbuild: 0.7.4
     transitivePeerDependencies:

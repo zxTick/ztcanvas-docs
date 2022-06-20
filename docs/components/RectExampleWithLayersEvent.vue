@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { onMounted, onBeforeMount } from "vue";
+import { onMounted } from "vue";
 import { CanvasEngine, EventName, Rect } from "ztcanvas";
 
-let timer;
 onMounted(() => {
   const engine3 = new CanvasEngine({
     w: "200",
@@ -32,9 +31,6 @@ onMounted(() => {
   });
 });
 
-onBeforeMount(() => {
-  clearInterval(timer);
-});
 </script>
 <template>
   <canvas id="canvas4" style="background-color: #aaa"></canvas>

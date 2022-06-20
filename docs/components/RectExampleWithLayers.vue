@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, onBeforeMount } from 'vue';
+import { onMounted, onBeforeUnmount } from 'vue';
 import { CanvasEngine, Rect } from 'ztcanvas'
 
 let timer
@@ -26,7 +26,7 @@ onMounted(() => {
   }, 500)
 })
 
-onBeforeMount(() => {
+onBeforeUnmount(() => {
   clearInterval(timer)
 })
 

@@ -3,6 +3,7 @@
   import WithEvent from '../components/RectExampleWithEvent.vue'
   import WithLayers from "../components/RectExampleWithLayers.vue"
   import WithEventLayers from "../components/RectExampleWithLayersEvent.vue"
+  import WithEventLayersVanilla from '../components/RectExampleWithLayersEventVanilla.vue'
 </script>
 
 # Why ZTCanvas
@@ -143,14 +144,22 @@ setInterval(() => {
   engine3.modifyShapeLayer(rect2, flag ? 0 : 1)
 }, 500)
 ```
-What happens when event listeners are bound in the case of overlapping layers?
 
-an example 👇
+## Events with layers
 
+We all know that canvas is just a plane, no layers. So if shapes are overlapped, shape bind events are all triggered, it's weird. 
 
-<br />
+But `ZTCanvas` can manage relationships between layers and events.
+
+Open your browser devtools, go to console panel, click the overlapping parts between the three rectangles.
 
 <WithEventLayers />
+
+The overlapping part just trigger the top layer shape, right? Just like dom.
+
+Thanks to our event management system, this feature realizes very cleverly and clearly. Welcome to check `ZTCanvas` source code.
+
+### source code
 
 ``` ts
 const engine3 = new CanvasEngine({
@@ -181,11 +190,6 @@ engine3.addEventListener(rect3, EventName.click, () => {
 });
 
 ```
-Now you can open your console and click on the random position of each rectangle to see that our events are layer specific, thanks to the event architecture we use, we are very happy with this and welcome you to
-
-
-
-
 
 
 

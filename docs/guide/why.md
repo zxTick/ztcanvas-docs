@@ -2,6 +2,7 @@
   import Rect from '../components/RectExample.vue'
   import WithEvent from '../components/RectExampleWithEvent.vue'
   import WithLayers from "../components/RectExampleWithLayers.vue"
+  import WithEventLayers from "../components/RectExampleWithLayersEvent.vue"
 </script>
 
 # Why ZTCanvas
@@ -142,3 +143,49 @@ setInterval(() => {
   engine3.modifyShapeLayer(rect2, flag ? 0 : 1)
 }, 500)
 ```
+What happens when event listeners are bound in the case of overlapping layers?
+
+an example 👇
+
+
+<br />
+
+<WithEventLayers />
+
+``` ts
+const engine3 = new CanvasEngine({
+  w: "200",
+  h: "200",
+  canvasTarget: "canvas4",
+});
+const rect = new Rect(10, 10, 80, 80, 0);
+engine3.render(rect, {
+  color: "#dd6d50",
+});
+const rect2 = new Rect(40, 40, 80, 80, 1);
+engine3.render(rect2, {
+  color: "purple",
+});
+const rect3 = new Rect(60, 60, 80, 80, 1);
+engine3.render(rect3, {
+  color: "red",
+});
+engine3.addEventListener(rect, EventName.click, () => {
+  console.log(1);
+});
+engine3.addEventListener(rect2, EventName.click, () => {
+  console.log(2);
+});
+engine3.addEventListener(rect3, EventName.click, () => {
+  console.log(3);
+});
+
+```
+Now you can open your console and click on the random position of each rectangle to see that our events are layer specific, thanks to the event architecture we use, we are very happy with this and welcome you to
+
+
+
+
+
+
+

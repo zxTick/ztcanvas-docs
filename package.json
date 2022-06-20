@@ -11,6 +11,6 @@
     "vue": "^3.2.37"
   },
   "dependencies": {
-    "ztcanvas": "^1.0.2"
+    "ztcanvas": "^1.0.3"
   }
 }
